@@ -1,68 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Portal</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="header-logo">
-                <a href="">Game Portal</a>
-            </div>
-            <nav>
-                <div class="row">
-                    <a href="">Головна</a><a href="">Minecraft</a><a href="">Brawl Stars</a>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="header-logo">
+                    <a href="">Game Portal</a>
                 </div>
-            </nav>
+                <nav>
+                    <div class="row">
+                        <a href="/">Головна</a><a href="./minecraft.html">Minecraft</a><a href="./brawlstars.html">Brawl Stars</a>
+                    </div>
+                </nav>
+                <div class="burger">
+                    <figure id="burger-1"></figure>
+                    <figure id="burger-2"></figure>
+                    <figure id="burger-3"></figure>
+                </div>
+            </div>
         </div>
-    </div>
-</header>
-<main>
-    <section class="hero">
-           <div class="hero-slider">
-            <div class="hero-slider__list">
-                <div class="slider-item">
-                    <img src="./img/image 1.png" alt="">
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="hero-slider__list">
+                    <div class="slider-item">
+                        <img src="./img/image 1.png" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/image 18.png" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/image 21.png" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/ed6f5-16069157093599-800.avif" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/Pubg.png" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/Rust.png" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/Stray.png" alt="">
+                    </div>
                 </div>
-                <div class="slider-item">
-                    <img src="./img/image 18.png" alt="">
+                <ul class="slider-dots">
+                    <li class="active" data-id="0"></li>
+                    <li data-id="1"></li>
+                    <li data-id="2"></li>
+                    <li data-id="3"></li>
+                    <li data-id="4"></li>
+                    <li data-id="5"></li>
+                    <li data-id="6"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="games">
+            <div class="container">
+                <h1>Топ популярних ігор на сьогодні</h1>
+                <div class="row">
+                    <ul>
+                        <li class="active">Red Dead Redemption 2</li>
+                        <li>Minecraft</li>
+                        <li>Need for speed</li>
+                        <li>Rust</li>
+                        <li>Horizon</li>
+                        <li>Pubg</li>
+                        <li>Stray</li>
+                    </ul>
+                    <div class="games-img">
+                        <img class="active" src="./img/image 18.png" alt="">
+                        <img src="./img/image 21.png" alt="">
+                        <img src="./img/ed6f5-16069157093599-800.avif" alt="">
+                        <img src="./img/Rust.png" alt="">
+                        <img src="./img/image 1.png" alt="">
+                        <img src="./img/Pubg.png" alt="">
+                        <img src="./img/Stray.png" alt="">
+                    </div>
                 </div>
-                <div class="slider-item">
-                    <img src="./img/image 21.png" alt="">
-                </div>
-                <div class="slider-item">
-                    <img src="./img/Need for Speed.png" alt="">
-                </div>
-                <div class="slider-item">
-                    <img src="./img/Pubg.png" alt="">
-                </div>
-                <div class="slider-item">
-                    <img src="./img/Rust.png" alt="">
-                </div>
-                <div class="slider-item">
-                    <img src="./img/Stray.png" alt="">
+
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <h2>А на чому граєш ти?</h2>
+                <div class="row">
+                    <div class="cards-item">
+                        <img src="https://s3-alpha-sig.figma.com/img/eaf7/c0a5/7cc45e4607fd09539c20ab3b38cd7eec?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BrJOem8CkUyJihtJBmfnxglazkgrOcfIut~6e50hZxLwQfaavP5O8PdTqjsfbzfxmwSUXImGzYSfk56sVEQgh0M7RiNP7ys2aYdpNwbMRpHNFdp2RTFwZDoPtckSx58xSfmpzpe-8JU7JMeRqozrrkl~gWEJk9FLzW7muZoGg5q1U80jPrUn2nEoZ8d4rWJ09CEFpxxAaDr1ZvSAO~CuwZPwdVpoUnUeeEk~BvKc4sQKI5vmMs3M0nLb07Qy-TftPFzqZjJoJ51Cv5520O2pJYznoI1PcToDM0r~Xwokzj73z1FvhPu7NDYT62wgWprnR1WxJmyjecpAz0di9rudYQ__"
+                            alt="">
+                        <p>Ігровий ПК</p>
+                    </div>
+                    <div class="cards-item">
+                        <img src="https://s3-alpha-sig.figma.com/img/3fdf/2593/ee8f4da6b14fa4508c1d03440678b29c?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hf3JAv2H9NxWf8jMgPLbwJuDjcL0KXWvlGPYcTni535jv8fXT3X3EHFI1CwgCJc83rwRL4tF~qSJ95d-0hzADkl3N3jyLgAJN3gdgvwNA1uzDc1dd9PAyXUTOWkUb5F~OLJtJW3gilrwmwweS8QVqJU0tbHrebxmw0KSZ3ZzHrn2pvFy3VkEQIRAmi4jnqs0sDzqUeeAlyLXsyuiQzlzPInb3jcYuqg6HI~pz9mue6HBGSD1dTjF6rD-LgnLWa94nAOzKZd8f0yiuorL0IWKiO7PnPayxq2Typta6IKr7VMQM-r6gwi63tMW74T9QFIKS0~2mhbcHg01jmpXZItLXw__"
+                            alt="">
+                        <p>PLayStation</p>
+                    </div>
+                    <div class="cards-item">
+                        <img src="https://s3-alpha-sig.figma.com/img/a892/0034/2e844816349562dab82ee0534431c8a4?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Kt51yN5RFy6p6~X~8u~RPbqU233GjMOV2ElgjBAKpygGf-XSY6TPg04UIZzqc77BLhVhn8pl4gD3ainJmYmmrp5eUfxetOeKm99tnclNOadJWM5bZ~6ltF52oXahof6L4CzwcB~23qLIeyU9P5mDsc5jskz2xk5bVqHiaY-Qf3kfMHDQXrZ04ry8zMBoHCQVlMorth0DpoJV4oXAhngKXJvo6g16s986QQAJo47lM2rHCeBgpvz930ZHglus6dvFxsYrv8h6si6ZnGEowOvLZL7FPWugdZVLN7CKBADFbVRvezSsY10VG8C4G6z6qs31lUDRBx3ttr-smENH~TtXOg__"
+                            alt="">
+                        <p>Xbox</p>
+                    </div>
+
                 </div>
             </div>
-            <ul class="slider-dots">
-                <li class="active" data-id="0"></li>
-                <li data-id="1"></li>
-                <li data-id="2"></li>
-                <li data-id="3"></li>
-                <li data-id="4"></li>
-                <li data-id="5"></li>
-                <li data-id="6"></li>
-            </ul>
-           </div>
-    </section>
-</main>
-<footer>
-    <div class="container"></div>
-</footer>
+
+        </section>
+        <section class="random">
+            <div class="container">
+                <div class="row">
+                    <div class="random-game">
+                        <img src="./img/image 21.png" alt="">
+                        <p>Minecraft</p>
+                    </div>
+                    <div class="random-info">
+                        <h2>Рандомайзер</h2>
+                        <button class="random-btn">Генерувати</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <a href="tel:+380506333215">Контакт</a>
+                <div class="footer-sotial">
+                    <a href="https://www.instagram.com/ythacker_228/">
+                        <img src="https://s3-alpha-sig.figma.com/img/cab9/7bbd/c04925aa77abae6335aca31db3024fa4?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oUNj6tAZewpTB97LtomtkUfDbxwnZgJCeNLaG-gy9O7xq63pZfApoJ8Gb4-trGG02O5uvzlgdYigMoKtHWInyrM-583DsJqOxAswLP1P4txTILxclB8w7nV1HtU~UNxa2Mw~QV95zvZTboT-C9XJG82N26ZQdifNjZl7xm92fa0yJ2iYaRolbXy1QlUqDByjaAomNVrq5oGjPLzVajiftfRpscUd6-VAHwhHWlvjaQcqon7Q~Qxhwko9jX5uGQr7oXh8AEDwzafnhhP9pwetUDgPwdvpeXgSbQf58jWua5dZ0f~KARQxl-qpIrpic141jMcjvvecx0ZC4Qab-UQyXQ__" alt="">
+                    </a>
+                    <a href="https://t.me/YTHacker1756">
+                        <img src="https://s3-alpha-sig.figma.com/img/fe57/6d50/7a9274096ce39a3653eed73d8b7f6b6a?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NQBlLAxBDR1Z~zWcvb5j6NqRLgvqbupcWSHLH1h2beIoj-UHCyvO-m4LXL4CJ4a194shHXgPOCjUBSGNJjPLbLBi5XN9DJwuodyNrS-E9Cb2GNjkSK-kBMIBSDj0M73FJ7Su8jvqNw033dB6hpsRfB5iqb3OfK--Y0SJ3oHPbUyiLqxaFf5Q71-l2GRVK~ebtTDY~Dp1hdDirKIEb8lg7sayQSy880vhxNSyrD6kNjE9Nwm7QaXH4VkvZs986X~AzL0~5J2zXWb6IFG5CPLGEbAp443MEPD0YOgtYJnTFgbn8tsai6N4Hm~KqvqVCRPeb5sXDTAMMaul66Q2eoxNlw__" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <script src="./script.js"></script>
 </body>
+
 </html>

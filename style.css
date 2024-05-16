@@ -43,7 +43,7 @@ header a{
     width: 100%;
 }
 .hero-slider{
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -66,4 +66,107 @@ header a{
 }
 .slider-dots li.active{
     opacity: 1;
+}
+.games{
+    padding: 70px 0;
+}
+h1,h2{
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.games li{
+    list-style: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 15px 0;
+
+}
+.games-img{
+    width: 900px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.games-img img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 1;
+    border-radius: 0 0 300px 0;
+    transition: all 0.4s ease-out;
+}
+.games li.active{
+    font-size: 28px;
+    font-weight: 700;
+}
+.games-img img.active{
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    border-radius: 15px;
+}
+.cards{
+    background-color: black;
+    padding: 70px 0;
+    color: white;
+}
+.cards-item{
+    width: 300px;
+    text-align: center;
+}
+.cards-item img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+.random{
+    padding: 70px 0;
+}
+.random-game{
+    width: 450px;
+}
+.random-game img{
+    width: 600px;
+    height: 300px;
+}
+.random-game p{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.random-info h2{
+    font-size: 30px;
+}
+.random-info button{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    width: 220px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.random-info button:hover{
+    box-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+footer{
+    background-color: black;
+    padding: 20px;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+}
+footer a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.random-game img{
+    object-fit: cover;
 }
