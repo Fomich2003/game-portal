@@ -72,3 +72,33 @@ height: 360px;
     width: fit-content;
     padding: 5px 25px;
 }
+
+
+@media all and (max-width: 1024px) {
+     .game-info{
+        padding: 90px;
+     }
+     .game-telegram .row{
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+    }
+    @media all and (max-width: 768px) {
+   .game-info-imgs{
+    flex-wrap: wrap;
+    gap: 20px;
+   }
+.game-other-box{
+    flex-wrap: wrap;
+}
+.game-info-imgs img{
+    width: 100%;
+}
+.game-other h2{
+    font-size: 32px;
+}
+.game-telegram-right img{
+    width: 100%;
+    height: auto;
+}
+    }
