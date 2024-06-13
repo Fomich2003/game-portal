@@ -1,3 +1,76 @@
+h1{
+    margin: 0;
+}
+
+.games-header{
+    margin-bottom: 35px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.74);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.modal.active{
+    z-index: 100;
+    opacity: 1;
+}
+
+.modal form{
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.modal h2{
+    color: white;
+}
+
+.modal .form-btn{
+    height: 35px;
+    cursor: pointer;
+    background: white;
+    line-height: 35px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border: none;
+}
+
+.modal .row{
+    gap: 15px;
+}
+
+.modal input, .modal textarea{
+    padding: 7px 10px;
+}
+
+.games-header button{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+
 .games-list-item img{
     width: 600px;
     height: 300px;
@@ -29,4 +102,18 @@ flex-shrink: 0;
     border-radius: 20px;
     display: block;
     width: fit-content;
+}
+
+@media all and (max-width: 1024px) {
+    .games-list-item{
+        flex-direction: column;
+    }
+    .games-list-item-description{
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+    .games-list-item img{
+        width: 100%;
+        max-width: 600px;
+    }
 }

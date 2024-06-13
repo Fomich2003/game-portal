@@ -1,3 +1,4 @@
+
 .game-top{
     width: 100%;
     height: calc(100vh - 63.2px);
@@ -76,7 +77,7 @@ height: 360px;
 
 @media all and (max-width: 1024px) {
      .game-info{
-        padding: 90px;
+        padding: 90px 0;
      }
      .game-telegram .row{
         flex-wrap: wrap;
