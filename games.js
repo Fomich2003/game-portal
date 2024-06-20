@@ -51,5 +51,30 @@ let form = document.querySelector('form')
 
 form.addEventListener('submit', (event)=>{
     event.preventDefault()
-console.log(input1.value)
+
+    let newgame = {
+        poster: input1.value,
+        title: input2.value,
+        description: input3.value,
+        img1: input4.value,
+        img2: input5.value
+    }
+
+     postGame(newgame).then(data => {
+        if (data) {
+            modal.classList.remove('active')
+            getallgames().then(data => { renderallgames(data) })
+        }
+     })
 })
+
+async function postGame(newgame) {
+    let res = await fetch('https://6661c2aa63e6a0189feb74e0.mockapi.io/allgames', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(newgame)
+    } )
+    let data = await res.json()
+    return data
+}
+
