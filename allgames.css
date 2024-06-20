@@ -58,6 +58,7 @@ h1{
 
 .modal input, .modal textarea{
     padding: 7px 10px;
+    font-size: 16px;
 }
 
 .games-header button{
